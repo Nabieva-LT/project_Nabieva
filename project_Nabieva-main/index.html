@@ -3,68 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт Медецинских анализов </title>
+    <title>Сайт Медицинских анализов</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <body>
-        <header>
-            <h1>Поликлиника "Забота о здоровье"</h1>
-            <img src="images/logo.jpg" alt="Логотип" width="100" height="100">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="servis.html">Услуги</a></li>
-                    <li><a href="info.html">О нас</a></li>
-                    <li><a href="zap.html">Запись на прием</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
+        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="100" height="100">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="servis.html">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="info.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="zap.html">Запись на прием</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="services" id="services">
+            <h2 class="services__title">Наши услуги</h2>
+            <ul class="services__list">
+                <li class="services__item">Общий анализ крови</li>
+                <li class="services__item">Биохимический анализ крови</li>
+                <li class="services__item">Анализ на гормоны</li>
+                <li class="services__item">Микробиологические исследования</li>
+            </ul>
+        </section>
         
-        <main>
-            <section id="services">
-                <h2>Наши услуги</h2>
-                <ul>
-                    <li>Общий анализ крови</li>
-                    <li>Биохимический анализ крови</li>
-                    <li>Анализ на гормоны</li>
-                    <li>Микробиологические исследования</li>
-                </ul>
-            </section>
-            
-            <section id="about">
-                <h2>О нас</h2>
-                <img src="images/главная картинка.jpg" alt="Логотип" width="800" height="400">
-                <p>Мы предлагаем качественные медицинские анализы с быстрыми результатами. Наша команда профессионалов гарантирует высокий уровень обслуживания и индивидуальный подход к каждому пациенту.</p>
-            </section>
-            
-            <section id="client-reviews">
-                <h2>Отзывы наших клиентов</h2>
-                <div class="reviews-container">
-                    <div class="review">
-                        <p>"Отличное обслуживание! Результаты анализов были готовы в кратчайшие сроки." - Анна П.</p>
-                    </div>
-                    <div class="review">
-                        <p>"Высокий уровень профессионализма и внимательность к деталям. Рекомендую!" - Сергей К.</p>
-                    </div>
-                    <div class="review">
-                        <p>"Всё на высшем уровне! Получила результаты вовремя и без лишних вопросов." - Мария Л.</p>
-                    </div>
-                    <div class="review">
-                        <p>"Понравилось, как быстро проведены анализы и как заботились о моем комфорте." - Ольга И.</p>
-                    </div>
+        <section class="about" id="about">
+            <h2 class="about__title">О нас</h2>
+            <img class="about__image" src="images/главная картинка.jpg" alt="Логотип" width="800" height="400">
+            <p class="about__description">Мы предлагаем качественные медицинские анализы с быстрыми результатами. Наша команда профессионалов гарантирует высокий уровень обслуживания и индивидуальный подход к каждому пациенту.</p>
+        </section>
+        
+        <section class="client-reviews" id="client-reviews">
+            <h2 class="client-reviews__title">Отзывы наших клиентов</h2>
+            <div class="client-reviews__container">
+                <div class="client-reviews__review">
+                    <p class="client-reviews__text">"Отличное обслуживание! Результаты анализов были готовы в кратчайшие сроки." - Анна П.</p>
                 </div>
-            </section>
-            
-            <section id="contact">
-                <h2>Связаться с нами</h2>
-                <p> Email: zabotaosebe@gmail.com</p>
-                <p> Телефон: +79887875657</p>
-                <p> Адрес: ул.Машиностроителей 77</p>
-        </main>
+                <div class="client-reviews__review">
+                    <p class="client-reviews__text">"Высокий уровень профессионализма и внимательность к деталям. Рекомендую!" - Сергей К.</p>
+                </div>
+                <div class="client-reviews__review">
+                    <p class="client-reviews__text">"Всё на высшем уровне! Получила результаты вовремя и без лишних вопросов." - Мария Л.</p>
+                </div>
+                <div class="client-reviews__review">
+                    <p class="client-reviews__text">"Понравилось, как быстро проведены анализы и как заботились о моем комфорте." - Ольга И.</p>
+                </div>
+            </div>
+        </section>
         
-        <footer>
-            <p>&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
-        </footer>
-    </body>
+        <section class="contact" id="contact">
+            <h2 class="contact__title">Связаться с нами</h2>
+            <p class="contact__email">Email: zabotaosebe@gmail.com</p>
+            <p class="contact__phone">Телефон: +79887875657</p>
+            <p class="contact__address">Адрес: ул. Машиностроителей 77</p>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
+    </footer>
 </body>
 </html>

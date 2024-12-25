@@ -3,72 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт Медецинских анализов </title>
+    <title>Сайт медицинских анализов</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <body>
-        <header>
-            <h1>Поликлиника "Забота о здоровье"</h1>
-            <img src="images/logo.jpg" alt="Логотип" width="100" height="100">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="servis.html">Услуги</a></li>
-                    <li><a href="info.html">О нас</a></li>
-                    <li><a href="zap.html">Запись на прием</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
+        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="100" height="100">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="servis.html">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="info.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="zap.html">Запись на прием</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section>
-            <h2>Наши Услуги</h2>
-            <ul>
-                <li>
-                    <h3>Общий анализ крови</h3>
-                    <p>При этом анализе определяется количество клеток крови и их состав, что помогает выявить различные заболевания.</p>
+    <main class="main">
+        <section class="services">
+            <h2 class="services__title">Наши Услуги</h2>
+            <ul class="services__list">
+                <li class="services__item">
+                    <h3 class="services__item-title">Общий анализ крови</h3>
+                    <p class="services__item-description">При этом анализе определяется количество клеток крови и их состав, что помогает выявить различные заболевания.</p>
                 </li>
-                <li>
-                    <h3>Биохимический анализ крови</h3>
-                    <p>Данный анализ помогает оценить состояние внутренних органов и обмен веществ в организме.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Биохимический анализ крови</h3>
+                    <p class="services__item-description">Данный анализ помогает оценить состояние внутренних органов и обмен веществ в организме.</p>
                 </li>
-                <li>
-                    <h3>Анализ на холестерин</h3>
-                    <p>Этот анализ позволяет выявить уровень холестерина и его фракций, что важно для оценки риска сердечно-сосудистых заболеваний.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Анализ на холестерин</h3>
+                    <p class="services__item-description">Этот анализ позволяет выявить уровень холестерина и его фракций, что важно для оценки риска сердечно-сосудистых заболеваний.</p>
                 </li>
-                <li>
-                    <h3>Общий анализ мочи</h3>
-                    <p>Анализ мочи позволяет оценить функционирование почек и выявить различные заболевания мочевыводящих путей.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Общий анализ мочи</h3>
+                    <p class="services__item-description">Анализ мочи позволяет оценить функционирование почек и выявить различные заболевания мочевыводящих путей.</p>
                 </li>
-                <li>
-                    <h3>Анализ на глюкозу</h3>
-                    <p>Данный анализ помогает определить уровень сахара в крови, что важно для диагностики диабета.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Анализ на глюкозу</h3>
+                    <p class="services__item-description">Данный анализ помогает определить уровень сахара в крови, что важно для диагностики диабета.</p>
                 </li>
-                <li>
-                    <h3>Микробиологический посев</h3>
-                    <p>Анализ используется для выявления инфекционных pathogens и определения их чувствительности к антибиотикам.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Микробиологический посев</h3>
+                    <p class="services__item-description">Анализ используется для выявления инфекционных pathogenic и определения их чувствительности к антибиотикам.</p>
                 </li>
-                <li>
-                    <h3>Тест на COVID-19</h3>
-                    <p>Данный анализ позволяет быстро определить наличие вируса в организме и является важным для общественного здравоохранения.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Тест на COVID-19</h3>
+                    <p class="services__item-description">Данный анализ позволяет быстро определить наличие вируса в организме и является важным для общественного здравоохранения.</p>
                 </li>
-                <li>
-                    <h3>Гормональные исследования</h3>
-                    <p>Анализы на уровень гормонов помогают диагностировать различные эндокринные расстройства и планировать лечение.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Гормональные исследования</h3>
+                    <p class="services__item-description">Анализы на уровень гормонов помогают диагностировать различные эндокринные расстройства и планировать лечение.</p>
                 </li>
-                <li>
-                    <h3>Анализ на ВИЧ</h3>
-                    <p>Тестирование на ВИЧ помогает выявить наличие вируса в организме и оценить необходимость лечения.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Анализ на ВИЧ</h3>
+                    <p class="services__item-description">Тестирование на ВИЧ помогает выявить наличие вируса в организме и оценить необходимость лечения.</p>
                 </li>
-                <li>
-                    <h3>Анализ на аллергию</h3>
-                    <p>Этот анализ помогает выявить аллергены и определить причины аллергических реакций.</p>
+                <li class="services__item">
+                    <h3 class="services__item-title">Анализ на аллергию</h3>
+                    <p class="services__item-description">Этот анализ помогает выявить аллергены и определить причины аллергических реакций.</p>
                 </li>
             </ul>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
     </footer>
 </body>
 </html>

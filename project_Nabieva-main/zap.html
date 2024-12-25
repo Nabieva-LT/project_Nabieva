@@ -3,63 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт Медецинских анализов </title>
+    <title>Сайт медицинских анализов</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <body>
-        <header>
-            <h1>Поликлиника "Забота о здоровье"</h1>
-            <img src="images/logo.jpg" alt="Логотип" width="100" height="100">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="servis.html">Услуги</a></li>
-                    <li><a href="info.html">О нас</a></li>
-                    <li><a href="zap.html">Запись на прием</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
+        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="100" height="100">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="servis.html">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="info.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="zap.html">Запись на прием</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section>
-                <h2>Запись на прием</h2>
-                <form action="submit_appointment.php" method="post">
-                    <label for="full-name">ФИО:</label>
-                    <input type="text" id="full-name" name="full_name" required>
-    
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" required>
-    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="date">Дата приема:</label>
-                    <input type="date" id="date" name="date" required>
-    
-                    <label for="time">Время приема:</label>
-                    <input type="time" id="time" name="time" required>
-    
-                    <label for="service">Выбор услуги:</label>
-                    <select id="service" name="service" required>
-                        <option value="general_analysis">Общий анализ крови</option>
-                        <option value="biochemical_analysis">Биохимический анализ крови</option>
-                        <option value="covid_test">Анализ на холестерин</option>
-                        <option value="glucose_test">Общий анализ мочи</option>
-                        <option value="urinalysis">Анализ на глюкозу</option>
-                        <option value="covid_test">Микробиологический посев</option>
-                        <option value="covid_test">Тест на COVID-19</option>
-                        <option value="covid_test">Гормональные исследования</option>
-                        <option value="covid_test">Анализ на ВИЧ</option>
-                        <option value="covid_test">Анализ на аллергию</option>
-                    </select>
-    
-                    <button type="submit">Записаться</button>
-                </form>
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
-        </footer>
-    </body>
-    </html>
+    <main class="main">
+        <section class="appointment">
+            <h2 class="appointment__title">Запись на прием</h2>
+            <form class="appointment__form" action="submit_appointment.php" method="post">
+                <label class="appointment__label" for="full-name">ФИО:</label>
+                <input class="appointment__input" type="text" id="full-name" name="full_name" required>
+
+                <label class="appointment__label" for="phone">Телефон:</label>
+                <input class="appointment__input" type="tel" id="phone" name="phone" required>
+
+                <label class="appointment__label" for="email">Email:</label>
+                <input class="appointment__input" type="email" id="email" name="email" required>
+
+                <label class="appointment__label" for="date">Дата приема:</label>
+                <input class="appointment__input" type="date" id="date" name="date" required>
+
+                <label class="appointment__label" for="time">Время приема:</label>
+                <input class="appointment__input" type="time" id="time" name="time" required>
+
+                <label class="appointment__label" for="service">Выбор услуги:</label>
+                <select class="appointment__select" id="service" name="service" required>
+                    <option value="general_analysis">Общий анализ крови</option>
+                    <option value="biochemical_analysis">Биохимический анализ крови</option>
+                    <option value="cholesterol_test">Анализ на холестерин</option>
+                    <option value="urinalysis">Общий анализ мочи</option>
+                    <option value="glucose_test">Анализ на глюкозу</option>
+                    <option value="microbiological_test">Микробиологический посев</option>
+                    <option value="covid_test">Тест на COVID-19</option>
+                    <option value="hormonal_studies">Гормональные исследования</option>
+                    <option value="hiv_test">Анализ на ВИЧ</option>
+                    <option value="allergy_test">Анализ на аллергию</option>
+                </select>
+
+                <button class
