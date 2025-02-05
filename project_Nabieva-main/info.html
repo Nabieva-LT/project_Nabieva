@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт медицинских анализов</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Сайт Медицинских анализов</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="header">
         <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
-        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="100" height="100">
+        <img class="header__logo" src="images/logo.final.png" alt="Логотип" width="100" height="100"> 
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
@@ -21,29 +22,52 @@
     </header>
     
     <main class="main">
-        <section class="about-clinic">
-            <h2 class="about-clinic__title">О нашей клинике</h2>
-            <p class="about-clinic__description">Наша клиника предлагает широкий спектр лабораторных анализов, обеспечивая высокое качество обслуживания и современные технологии. Мы гордимся нашей командой высококвалифицированных специалистов, которые работают для вашего здоровья.</p>
+        <section class="about" id="about">
+            <h2 class="about__title">О нас</h2>
+            <img class="about__image" src="images/dnk.png" alt="Главная картинка">
+            <p class="about__description">Мы предлагаем качественные медицинские анализы с быстрыми результатами. Наша команда профессионалов гарантирует высокий уровень обслуживания и индивидуальный подход к каждому пациенту.</p>
         </section>
-        
-        <section class="mission">
-            <h2 class="mission__title">Наша миссия</h2>
-            <p class="mission__description">Мы стремимся обеспечить надежные и доступные медицинские услуги, чтобы помочь нашим пациентам своевременно диагностировать и лечить заболевания. Наша миссия - заботиться о вашем здоровье на каждом этапе.</p>
-        </section>
-        
-        <section class="why-us">
-            <h2 class="why-us__title">Почему выбирают нас?</h2>
-            <ul class="why-us__list">
-                <li class="why-us__item">Современное оборудование</li>
-                <li class="why-us__item">Индивидуальный подход к каждому пациенту</li>
-                <li class="why-us__item">Краткие сроки проведения анализов</li>
-                <li class="why-us__item">Компетентный и дружелюбный персонал</li>
+        <section class="services" id="services">
+            <h2 class="services__title">Наши услуги</h2>
+            <ul class="services__list">
+                <li class="services__item">Общий анализ крови</li>
+                <li class="services__item">Биохимический анализ крови</li>
+                <li class="services__item">Анализ на гормоны</li>
+                <li class="services__item">Микробиологические исследования</li>
             </ul>
+        </section>
+        
+        <section class="client-reviews">
+            <h2 class="client-reviews__title">Отзывы клиентов</h2>
+            <div class="client-reviews__container">
+                <div class="client-reviews__review">
+                    <p><strong>Анна Петрова:</strong> Очень довольна качеством обслуживания! Врачи внимательные и всегда готовы помочь.</p>
+                </div>
+                <div class="client-reviews__review">
+                    <p><strong>Иван Сидоров:</strong> Отличная клиника! Быстрое получение результатов анализов, все на высшем уровне.</p>
+                </div>
+                <div class="client-reviews__review">
+                    <p><strong>Мария Кузнецова:</strong> Я всегда обращаюсь сюда за медицинскими услугами. Рекомендую всем!</p>
+                </div>
+                <div class="client-reviews__review">
+                    <p><strong>Дмитрий Смирнов:</strong> Очень приятный персонал и удобное расположение клиники. Буду обращаться снова.</p>
+                </div>
+                <div class="client-reviews__review">
+                    <p><strong>Елена Иванова:</strong> Весьма профессиональный подход. Все анализы выполняются своевременно.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <h2 class="contact__title">Связаться с нами</h2>
+            <p class="contact__email">Email: zabotaosebe@gmail.com</p>
+            <p class="contact__phone">Телефон: +79887875657</p>
+            <p class="contact__address">Адрес: ул. Машиностроителей 77</p>
         </section>
     </main>
     
     <footer class="footer">
-        <p class="footer__text">&copy; 2024 Медицинская клиника. Все права защищены.</p>
+        <p class="footer__text">&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
     </footer>
 </body>
 </html>
