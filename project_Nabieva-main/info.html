@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт Медицинских анализов</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Сайт медицинских анализов</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header class="header">
         <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
-        <img class="header__logo" src="images/logo.final.png" alt="Логотип" width="100" height="100"> 
+        <img class="header__logo" src="images/logo.final.png" alt="Логотип" width="100" height="100">
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
@@ -23,51 +25,55 @@
     
     <main class="main">
         <section class="about" id="about">
-            <h2 class="about__title">О нас</h2>
-            <img class="about__image" src="images/dnk.png" alt="Главная картинка">
-            <p class="about__description">Мы предлагаем качественные медицинские анализы с быстрыми результатами. Наша команда профессионалов гарантирует высокий уровень обслуживания и индивидуальный подход к каждому пациенту.</p>
+            <h2 class="about__title">О нашей клинике</h2>
+            <p class="about__description">Мы специализируемся на проведении широкого спектра исследований: от общеклинических до сложных молекулярно-генетических анализов. Наша лаборатория оснащена современным оборудованием, а все исследования выполняются в строгом соответствии с международными стандартами качества. Мы гордимся командой высококвалифицированных специалистов, которые обеспечивают точность и оперативность результатов. Наша цель — предоставлять пациентам достоверные данные для своевременной диагностики и эффективного лечения. Мы ценим доверие наших клиентов и стремимся сделать процесс сдачи анализов максимально комфортным и доступным.</p>
         </section>
-        <section class="services" id="services">
-            <h2 class="services__title">Наши услуги</h2>
-            <ul class="services__list">
-                <li class="services__item">Общий анализ крови</li>
-                <li class="services__item">Биохимический анализ крови</li>
-                <li class="services__item">Анализ на гормоны</li>
-                <li class="services__item">Микробиологические исследования</li>
-            </ul>
-        </section>
-        
-        <section class="client-reviews">
-            <h2 class="client-reviews__title">Отзывы клиентов</h2>
-            <div class="client-reviews__container">
-                <div class="client-reviews__review">
-                    <p><strong>Анна Петрова:</strong> Очень довольна качеством обслуживания! Врачи внимательные и всегда готовы помочь.</p>
+        <section class="specialists" id="specialists">
+            <h2 class="specialists__title">Наши Специалисты в сфере Лабораторной диагностики</h2>
+            <div class="specialists__grid">
+                <div class="specialist">
+                    <img class="specialist__image" src="images/man.ivn.png" alt="Доктор Иванов А.И.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Иванов А.И.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
                 </div>
-                <div class="client-reviews__review">
-                    <p><strong>Иван Сидоров:</strong> Отличная клиника! Быстрое получение результатов анализов, все на высшем уровне.</p>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/woman.ptr.png" alt="Доктор Петрова А.В.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Петрова А.В.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
                 </div>
-                <div class="client-reviews__review">
-                    <p><strong>Мария Кузнецова:</strong> Я всегда обращаюсь сюда за медицинскими услугами. Рекомендую всем!</p>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/woman.sdr.png" alt="Доктор Сидорова Н.С.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Сидорова Н.С.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
                 </div>
-                <div class="client-reviews__review">
-                    <p><strong>Дмитрий Смирнов:</strong> Очень приятный персонал и удобное расположение клиники. Буду обращаться снова.</p>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/man.kzn.png" alt="Доктор Кузнецов Д.М.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Кузнецов Д.М.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
                 </div>
-                <div class="client-reviews__review">
-                    <p><strong>Елена Иванова:</strong> Весьма профессиональный подход. Все анализы выполняются своевременно.</p>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/man.sm.png" alt="Доктор Смирнов Е.В.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Смирнов Е.В.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
                 </div>
             </div>
         </section>
-        
-        <section class="contact" id="contact">
-            <h2 class="contact__title">Связаться с нами</h2>
-            <p class="contact__email">Email: zabotaosebe@gmail.com</p>
-            <p class="contact__phone">Телефон: +79887875657</p>
-            <p class="contact__address">Адрес: ул. Машиностроителей 77</p>
+        <section class="certificates" id="certificates">
+            <h2 class="certificates__title">Сертификаты нашей клиники</h2>
+            <ul class="certificates__list">
+                <li class="certificates__item">
+                    <img class="certificate__image" src="images/liic.png" alt="Лицензия на медицинскую деятельность">
+                    <p>Лицензия на медицинскую деятельность</p>
+                </li>
+                <li class="certificates__item">
+                    <img class="certificate__image" src="images/sert.png" alt="Сертификат по лабораторной диагностике">
+                    <p>Сертификат по лабораторной диагностике</p>
+                </li>
+            </ul>
         </section>
     </main>
-    
     <footer class="footer">
-        <p class="footer__text">&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
+        <p class="footer__text">&copy; 2024 Наша Клиника. Все права защищены.</p>
     </footer>
 </body>
 </html>

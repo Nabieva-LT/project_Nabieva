@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт медицинских анализов</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header class="header">
@@ -19,11 +22,16 @@
             </ul>
         </nav>
     </header>
+
     <main class="main">
         <section class="services">
             <img class="about__image" src="images/serv.png" alt="Логотип" width="800" height="400">
             <h2 class="services__title">Наши Услуги</h2>
             <ul class="services__list">
+                <li class="services__item">
+                    <h3 class="services__item-title">Общий анализ крови</h3>
+                    <p class="services__item-description">При этом анализе определяется количество клеток крови и их состав, что помогает выявить различные заболевания.</p>
+                </li>
                 <li class="services__item">
                     <h3 class="services__item-title">Общий анализ крови</h3>
                     <p class="services__item-description">При этом анализе определяется количество клеток крови и их состав, что помогает выявить различные заболевания.</p>
@@ -67,7 +75,6 @@
             </ul>
         </section>
     </main>
-
     <footer class="footer">
         <p class="footer__text">&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
     </footer>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт медицинских анализов</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/appointment.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header class="header">
@@ -19,26 +22,20 @@
             </ul>
         </nav>
     </header>
-
     <main class="main">
         <section class="appointment">
             <h2 class="appointment__title">Запись на прием</h2>
             <form class="appointment__form" action="submit_appointment.php" method="post">
                 <label class="appointment__label" for="full-name">ФИО:</label>
                 <input class="appointment__input" type="text" id="full-name" name="full_name" required>
-
                 <label class="appointment__label" for="phone">Телефон:</label>
                 <input class="appointment__input" type="tel" id="phone" name="phone" required>
-
                 <label class="appointment__label" for="email">Email:</label>
                 <input class="appointment__input" type="email" id="email" name="email" required>
-
                 <label class="appointment__label" for="date">Дата приема:</label>
                 <input class="appointment__input" type="date" id="date" name="date" required>
-
                 <label class="appointment__label" for="time">Время приема:</label>
                 <input class="appointment__input" type="time" id="time" name="time" required>
-
                 <label class="appointment__label" for="service">Выбор услуги:</label>
                 <select class="appointment__select" id="service" name="service" required>
                     <option value="general_analysis">Общий анализ крови</option>
@@ -52,5 +49,12 @@
                     <option value="hiv_test">Анализ на ВИЧ</option>
                     <option value="allergy_test">Анализ на аллергию</option>
                 </select>
-
-                <button class
+                <button class="appointment__button" type="submit">Записаться</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Поликлиника "Забота о здоровье". Все права защищены.</p>
+    </footer>
+</body>
+</html>

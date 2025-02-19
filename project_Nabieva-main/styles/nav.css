@@ -1,0 +1,48 @@
+/* Стили для навигации */
+.nav {
+    margin-top: 15px; /* Отступ сверху для навигации */
+}
+
+.nav__list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.nav__item {
+    display: inline; /* Выравнивание по горизонтали */
+    margin: 0 15px; /* Отступы между пунктами */
+}
+
+.nav__link {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.nav__link:hover {
+    color: #ffdd57; /* Цвет при наведении */
+}
+/* Стили для навигации */
+.nav {
+    margin-top: 15px; /* Отступ сверху для навигации */
+}
+
+.nav__list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.nav__item {
+    display: inline; /* Выравнивание по горизонтали */
+    margin: 0 15px; /* Отступы между пунктами */
+}
+
+.nav__link {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.nav__link:hover {
+    color: #ffdd57; /* Цвет при наведении */
+}

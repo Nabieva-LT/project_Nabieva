@@ -1,42 +1,124 @@
-/* Общие стили */
-body {
-    font-family: 'Arial', sans-serif; /* Основной шрифт */
-    color: #333; /* Цвет текста */
-    background-color: #f4f4f4; /* Цвет фона */
-    margin: 0; /* Убираем отступы */
-    padding: 0; /* Убираем отступы */
-}
-
-/* Стили для заголовка */
+/* header.css */
 .header {
     background-color: #174c86; /* Цвет фона заголовка */
     color: white; /* Цвет текста заголовка */
     padding: 20px; /* Отступы */
     text-align: center; /* Центрирование содержимого */
 }
+
 .header__logo {
     width: 100px; /* Ширина логотипа */
     height: auto; /* Автоматическая высота */
     margin: 10px 0; /* Отступ сверху и снизу */
 }
 
-/* Стили для навигации */
 .nav {
     margin-top: 15px; /* Отступ сверху для навигации */
 }
+
 .nav__list {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
+    display: flex; /* Горизонтальное выравнивание пунктов */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 15px; /* Расстояние между пунктами */
 }
-.nav__item {
-    display: inline; /* Выравнивание по горизонтали */
-    margin: 0 15px; /* Отступы между пунктами */
-}
+
 .nav__link {
     color: white; /* Цвет ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
     transition: color 0.3s; /* Плавный переход цвета */
 }
+
+.nav__link:hover {
+    color: #ffdd57; /* Цвет при наведении */
+}
+/* header.css */
+.header {
+    background-color: #174c86; /* Цвет фона заголовка */
+    color: white; /* Цвет текста заголовка */
+    padding: 20px; /* Отступы */
+    text-align: center; /* Центрирование содержимого */
+}
+
+.header__logo {
+    width: 100px; /* Ширина логотипа */
+    height: auto; /* Автоматическая высота */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+.nav {
+    margin-top: 15px; /* Отступ сверху для навигации */
+}
+
+.nav__list {
+    display: flex; /* Горизонтальное выравнивание пунктов */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 15px; /* Расстояние между пунктами */
+}
+
+.nav__link {
+    color: white; /* Цвет ссылок */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.nav__link:hover {
+    color: #ffdd57; /* Цвет при наведении */
+}
+/* header.css */
+.header {
+    background-color: #174c86; /* Цвет фона заголовка */
+    color: white; /* Цвет текста заголовка */
+    padding: 20px; /* Отступы */
+    text-align: center; /* Центрирование содержимого */
+}
+
+.header__logo {
+    width: 100px; /* Ширина логотипа */
+    height: auto; /* Автоматическая высота */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+.nav__list {
+    display: flex; /* Горизонтальное выравнивание пунктов */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 15px; /* Расстояние между пунктами */
+}
+
+.nav__link {
+    color: white; /* Цвет ссылок */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.nav__link:hover {
+    color: #ffdd57; /* Цвет при наведении */
+}
+/* header.css */
+.header {
+    background-color: #174c86; /* Цвет фона заголовка */
+    color: white; /* Цвет текста заголовка */
+    padding: 20px; /* Отступы */
+    text-align: center; /* Центрирование содержимого */
+}
+
+.header__logo {
+    width: 100px; /* Ширина логотипа */
+    height: auto; /* Автоматическая высота */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+.nav {
+    margin-top: 15px; /* Отступ сверху для навигации */
+}
+
+.nav__list {
+    display: flex; /* Горизонтальное выравнивание пунктов */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 15px; /* Расстояние между пунктами */
+}
+
+.nav__link {
+    color: white; /* Цвет ссылок */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
 .nav__link:hover {
     color: #ffdd57; /* Цвет при наведении */
 }
