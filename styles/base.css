@@ -30,3 +30,101 @@ img {
     clip: rect(0 0 0 0); 
     overflow: hidden; 
 }
+/* base.css */
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    color: #333; /* Цвет текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списков по умолчанию */
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%; /* Изображения не выходят за пределы контейнера */
+    height: auto; /* Сохраняем пропорции */
+}
+/* base.css */
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    color: #333; /* Цвет текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списков по умолчанию */
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%; /* Изображения не выходят за пределы контейнера */
+    height: auto; /* Сохраняем пропорции */
+}
+/* base.css */
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    color: #333; /* Цвет текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списков по умолчанию */
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%; /* Изображения не выходят за пределы контейнера */
+    height: auto; /* Сохраняем пропорции */
+}
+/* base.css */
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    color: #333; /* Цвет текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списков по умолчанию */
+    padding: 0;
+    margin: 0;
+}
+
+input,
+select,
+button {
+    font-family: inherit; /* Наследуем шрифт */
+    font-size: 16px; /* Размер шрифта */
+}

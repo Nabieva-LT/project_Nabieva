@@ -4,110 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт медицинских анализов</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-
-      /* Общие стили */
-body {
-    font-family: 'Arial', sans-serif; /* Основной шрифт */
-    color: #333; /* Цвет текста */
-    background-color: #f4f4f4; /* Цвет фона */
-    margin: 0; /* Убираем отступы */
-    padding: 0; /* Убираем отступы */
-}
-
-/* Стили для заголовка */
-.header {
-    background-color: #174c86; /* Цвет фона заголовка */
-    color: white; /* Цвет текста заголовка */
-    padding: 20px; /* Отступы */
-    text-align: center; /* Центрирование содержимого */
-}
-
-.header__logo {
-    width: 100px; /* Ширина логотипа */
-    height: auto; /* Автоматическая высота */
-    margin: 10px 0; /* Отступ сверху и снизу */
-}
-
-/* Стили для навигации */
-.nav {
-    margin-top: 15px; /* Отступ сверху для навигации */
-}
-
-.nav__list {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-}
-
-.nav__item {
-    display: inline; /* Выравнивание по горизонтали */
-    margin: 0 15px; /* Отступы между пунктами */
-}
-
-.nav__link {
-    color: white; /* Цвет ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
-    transition: color 0.3s; /* Плавный переход цвета */
-}
-
-.nav__link:hover {
-    color: #ffdd57; /* Цвет при наведении */
-}
-
-/* Основные стили для блока main */
-.main {
-    padding: 20px; /* Отступы */
-}
-
-/* Стили для раздела "О нашей клинике" */
-.about__title {
-    margin-top: 20px; /* Отступ сверху */
-    color: #1c3044; /* Цвет заголовка */
-}
-
-/* Стили специалистов */
-.specialist {
-    margin: 20px 0; /* Вертикальные отступы для специалистов */
-}
-
-.specialist__name {
-    font-weight: bold; /* Жирный шрифт для имен специалистов */
-}
-
-/* Стили для изображений о специалистах и сертификатах */
-.about__image {
-    width: 200px; /* Ширина изображений */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    max-height: 200px; /* Максимальная высота 200 пикселей */
-    margin: 10px 0; /* Отступы сверху и снизу */
-}
-
-/* Стили для сертификатов */
-.certificates__title {
-    color: #1c3044; /* Цвет заголовка сертификатов */
-    margin-top: 20px; /* Отступ сверху */
-}
-
-.certificates__list {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-}
-
-/* Стили для подвала */
-.footer {
-    background-color: #2c3e50; /* Цвет фона подвала */
-    color: white; /* Цвет текста подвала */
-    text-align: center; /* Центрирование текста */
-    padding: 10px 0; /* Отступы вверху и внизу */
-    position: relative; /* Позиционирование подвала */
-    bottom: 0; /* Внизу страницы */
-    width: 100%; /* Полная ширина подвала */
-}
-    </style>
-
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
-
 <body>
     <header class="header">
         <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
@@ -125,53 +26,54 @@ body {
     <main class="main">
         <section class="about" id="about">
             <h2 class="about__title">О нашей клинике</h2>
-            <p class="about__description">Мы предоставляем лучшие медицинские анализы с использованием современных технологий.</p>
+            <p class="about__description">Мы специализируемся на проведении широкого спектра исследований: от общеклинических до сложных молекулярно-генетических анализов. Наша лаборатория оснащена современным оборудованием, а все исследования выполняются в строгом соответствии с международными стандартами качества. Мы гордимся командой высококвалифицированных специалистов, которые обеспечивают точность и оперативность результатов. Наша цель — предоставлять пациентам достоверные данные для своевременной диагностики и эффективного лечения. Мы ценим доверие наших клиентов и стремимся сделать процесс сдачи анализов максимально комфортным и доступным.</p>
         </section>
-
         <section class="specialists" id="specialists">
-            <img class="about__image" src="images/group.med.png" alt="Логотип" width="800" height="400">
             <h2 class="specialists__title">Наши Специалисты в сфере Лабораторной диагностики</h2>
-            <div class="specialist">
-                <h3 class="specialist__name">Доктор Иванов А.И.</h3>
-                <img class="about__image" src="images/man.ivn.png" alt="Логотип" width="500" height="200">
-                <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
-            </div>
-            <div class="specialist">
-                <h3 class="specialist__name">Доктор Петрова А.В.</h3>
-                <img class="about__image" src="images/woman.ptr.png" alt="Логотип" width="500" height="200">
-                <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
-            </div>
-            <div class="specialist">
-                <h3 class="specialist__name">Доктор Сидорова Н.С.</h3>
-                <img class="about__image" src="images/woman.sdr.png" alt="Логотип" width="500" height="200">
-                <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
-            </div>
-            <div class="specialist">
-                <h3 class="specialist__name">Доктор Кузнецов Д.М.</h3>
-                <img class="about__image" src="images/man.kzn.png" alt="Логотип" width="500" height="200">
-                <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
-            </div>
-            <div class="specialist">
-                <h3 class="specialist__name">Доктор Смирнов Е.В.</h3>
-                <img class="about__image" src="images/man.sm.png" alt="Логотип" width="500" height="200">
-                <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
+            <div class="specialists__grid">
+                <div class="specialist">
+                    <img class="specialist__image" src="images/man.ivn.png" alt="Доктор Иванов А.И.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Иванов А.И.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
+                </div>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/woman.ptr.png" alt="Доктор Петрова А.В.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Петрова А.В.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
+                </div>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/woman.sdr.png" alt="Доктор Сидорова Н.С.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Сидорова Н.С.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
+                </div>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/man.kzn.png" alt="Доктор Кузнецов Д.М.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Кузнецов Д.М.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
+                </div>
+                <div class="specialist">
+                    <img class="specialist__image" src="images/man.sm.png" alt="Доктор Смирнов Е.В.">
+                    <h3 class="specialist__name">Медицинский лабораторный техник Смирнов Е.В.</h3>
+                    <p class="specialist__specialization">Специализация: Лабораторная диагностика</p>
+                </div>
             </div>
         </section>
-
         <section class="certificates" id="certificates">
             <h2 class="certificates__title">Сертификаты нашей клиники</h2>
             <ul class="certificates__list">
-                <li class="certificates__item">Лицензия на медицинскую деятельность</li>
-                <img class="about__image" src="images/liic.png" alt="Логотип" width="200" height="300">
-                <li class="certificates__item">Сертификат по лабораторной диагностике</li>
-                <img class="about__image" src="images/sert.png" alt="Логотип" width="300" height="200">
+                <li class="certificates__item">
+                    <img class="certificate__image" src="images/liic.png" alt="Лицензия на медицинскую деятельность">
+                    <p>Лицензия на медицинскую деятельность</p>
+                </li>
+                <li class="certificates__item">
+                    <img class="certificate__image" src="images/sert.png" alt="Сертификат по лабораторной диагностике">
+                    <p>Сертификат по лабораторной диагностике</p>
+                </li>
             </ul>
         </section>
     </main>
-
     <footer class="footer">
         <p class="footer__text">&copy; 2024 Наша Клиника. Все права защищены.</p>
     </footer>
 </body>
 </html>
-

@@ -1,0 +1,11 @@
+/* responsive.css */
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column; /* Вертикальное выравнивание элементов навигации */
+    }
+
+    .services__list,
+    .client-reviews__container {
+        width: 100%; /* Ширина 100% для небольших экранов */
+    }
+}
