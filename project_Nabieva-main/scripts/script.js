@@ -38,3 +38,57 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('Нет изображений сертификатов или лицензий на странице.');
     }
 });
+
+// scripts/script.js
+
+// Создание слайдера для отзывов
+let currentIndex = 0; // Индекс текущего отзыва
+const reviewsContainer = document.querySelector(".client-reviews__container"); // Контейнер с отзывами
+const reviews = Array.from(document.querySelectorAll(".client-reviews__review")); // Все отзывы
+const prevButton = document.querySelector(".client-reviews__prev"); // Кнопка "Предыдущий"
+const nextButton = document.querySelector(".client-reviews__next"); // Кнопка "Следующий"
+const visibleCards = 3; // Количество отображаемых отзывов
+
+// Функция обновления слайдера
+function updateSlider() {
+    reviews.forEach((review, index) => {
+        if (index >= currentIndex && index < currentIndex + visibleCards) {
+            review.style.display = "block"; // Показываем отзыв
+            review.classList.add("active"); // Добавляем класс active для стилей
+        } else {
+            review.style.display = "none"; // Скрываем отзыв
+            review.classList.remove("active"); // Убираем класс active
+        }
+    });
+
+    // Блокируем кнопки при достижении конца списка
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex >= reviews.length - visibleCards;
+}
+
+// Обработчик события для кнопки "Предыдущий"
+prevButton.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--; // Переход на предыдущую страницу
+    } else {
+        currentIndex = reviews.length - visibleCards; // Циклический переход к последним отзывам
+    }
+    updateSlider();
+});
+
+// Обработчик события для кнопки "Следующий"
+nextButton.addEventListener("click", () => {
+    if (currentIndex < reviews.length - visibleCards) {
+        currentIndex++; // Переход на следующую страницу
+    } else {
+        currentIndex = 0; // Циклический переход к первым отзывам
+    }
+    updateSlider();
+});
+
+// Инициализация слайдера
+if (reviews.length > 0) {
+    updateSlider(); // Запускаем слайдер, если есть отзывы
+} else {
+    console.warn("Отзывы не найдены."); // Предупреждение, если отзывов нет
+}
