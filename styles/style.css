@@ -9,12 +9,11 @@
 /* Подключение стилей относящихся к main */ 
 @import "main.css"; 
 /* Подключение стилей относящихся к services (услуги)*/ 
-@import "services.css"; 
-/* Подключение стилей относящихся к record (запись на прием)*/ 
-@import "record.css"; 
-/* Подключение стилей относящихся к nav (навигация)*/ 
-@import "nav.css"; 
+@import "services.css";   
 /* Подключение стилей относящихся к adaptability (адаптивность)*/ 
 @import "adaptability.css"; 
 /* Подключение стилей относящихся к appointment*/ 
 @import "appointment.css"; 
+/* Подключение стилей относящихся к normalize*/ 
+@import "normalize.css"; 
+
