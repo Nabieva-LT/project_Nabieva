@@ -51,7 +51,7 @@
                     <option value="hiv_test">Анализ на ВИЧ</option>
                     <option value="allergy_test">Анализ на аллергию</option>
                 </select>
-                <button class="appointment__button" type="button">Записаться</button>
+                <button class="appointment__button" type="submit">Записаться</button>
             </form>
         </section>
     </main>
@@ -60,5 +60,12 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    
+    <div class="confirmation-modal" id="confirmationModal">
+        <div class="confirmation-content">
+            <h3 class="confirmation-title">Вы записались!</h3>
+            <button class="confirmation-button" id="confirmButton">OK</button>
+        </div>
+    </div>
 </body>
 </html>
