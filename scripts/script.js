@@ -67,28 +67,164 @@ function updateSlider() {
 }
 
 // Обработчик события для кнопки "Предыдущий"
-prevButton.addEventListener("click", () => {
-    if (currentIndex > 0) {
-        currentIndex--; // Переход на предыдущую страницу
-    } else {
-        currentIndex = reviews.length - visibleCards; // Циклический переход к последним отзывам
-    }
-    updateSlider();
-});
+if (prevButton != null)
+{
+    prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--; // Переход на предыдущую страницу
+        } else {
+         currentIndex = reviews.length - visibleCards; // Циклический переход к последним отзывам
+     }
+     updateSlider();
+    });
+}
 
 // Обработчик события для кнопки "Следующий"
-nextButton.addEventListener("click", () => {
-    if (currentIndex < reviews.length - visibleCards) {
-        currentIndex++; // Переход на следующую страницу
-    } else {
-        currentIndex = 0; // Циклический переход к первым отзывам
-    }
-    updateSlider();
-});
+if (nextButton != null)
+{
+    nextButton.addEventListener("click", () => {
+        if (currentIndex < reviews.length - visibleCards) {
+         currentIndex++; // Переход на следующую страницу
+        } else {
+         currentIndex = 0; // Циклический переход к первым отзывам
+        }
+        updateSlider();
+    });
+}
 
 // Инициализация слайдера
 if (reviews.length > 0) {
     updateSlider(); // Запускаем слайдер, если есть отзывы
 } else {
     console.warn("Отзывы не найдены."); // Предупреждение, если отзывов нет
+}
+// Получаем контейнер с секцией специалистов
+const specialistsSection = document.querySelector(".specialists");
+
+// Проверяем существование элемента
+if (specialistsSection) {
+    // Массив с данными специалистов
+    const dataSpecialists = [
+        "Иванов А.И.",
+        "Петрова А.В.",
+        "Сидорова Н.С.",
+        "Смирнов Е.В."
+    ];
+
+    // Получаем все элементы с именами специалистов
+    const specialistNames = specialistsSection.querySelectorAll(".specialist__name");
+
+    // Обновляем текст в каждом элементе
+    specialistNames.forEach((item, index) => {
+        item.textContent = dataSpecialists[index];
+    });
+}
+//Для кнопки записаться
+// Обработчик для формы записи
+let apForm = document.querySelector('.appointment__form');
+if (apForm != null)
+{
+document.querySelector('.appointment__form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Отменяем стандартную отправку формы
+    
+    const modal = document.getElementById('confirmationModal');
+    const confirmBtn = document.getElementById('confirmButton');
+    
+    // Показываем модальное окно
+    modal.style.display = 'flex';
+    
+    // Закрытие по кнопке OK
+    confirmBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+    
+    // Закрытие при клике вне окна
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+// Обработчик для формы записи
+apForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = this; // Сохраняем ссылку на форму
+    const modal = document.getElementById('confirmationModal');
+    const confirmBtn = document.getElementById('confirmButton');
+
+    modal.style.display = 'flex';
+    
+    // Обработчик для кнопки OK
+    const closeHandler = () => {
+        modal.style.display = 'none';
+        form.reset(); // Очищаем все поля формы
+        confirmBtn.removeEventListener('click', closeHandler); // Удаляем обработчик
+    };
+    
+    confirmBtn.addEventListener('click', closeHandler);
+    
+    // Закрытие при клике вне окна
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            form.reset(); // Очищаем поля и при закрытии через клик вне окна
+        }
+    });
+});
+}
+// Динамическое создание услуг
+const servicesSection = document.querySelector('.services');
+if (servicesSection) {
+    const servicesList = servicesSection.querySelector('.services__list');
+    
+    // Массив данных об услугах
+    const servicesData = [
+        "Общий анализ крови",
+        "Биохимический анализ крови",
+        "Анализ на гормоны",
+        "Микробиологические исследования",
+        "Анализ на холестерин",
+        "Тест на COVID-19",
+        "Гормональные исследования",
+        "Анализ на аллергию"
+    ];
+
+    // Функция создания HTML-элемента услуги
+    const createServiceItem = (serviceName) => {
+        return `<li class="services__item">${serviceName}</li>`;
+    };
+
+    // Добавляем услуги в список
+    servicesData.forEach(service => {
+        servicesList.insertAdjacentHTML('beforeend', createServiceItem(service));
+    });
+}
+// Динамическое создание навигационного меню 2 ч.
+const navMenu = document.querySelector('.nav');
+if (navMenu) {
+    const navList = navMenu.querySelector('.nav__list');
+
+    // Массив данных меню
+    const menuData = [
+        { link: "index.html", title: "Главная" },
+        { link: "servis.html", title: "Услуги" },
+        { link: "info.html", title: "О нас" },
+        { link: "zap.html", title: "Запись на прием" }
+    ];
+
+    // Функция создания HTML-элемента меню
+    const createMenuItem = ({ link, title }) => {
+        return `
+            <li class="nav__item">
+                <a class="nav__link" href="${link}">${title}</a>
+            </li>
+        `;
+    };
+
+    // Добавляем пункты меню
+    menuData.forEach(item => {
+        navList.insertAdjacentHTML('beforeend', createMenuItem(item));
+    });
+
+    console.log('Навигационное меню создано с помощью JavaScript!');
 }
