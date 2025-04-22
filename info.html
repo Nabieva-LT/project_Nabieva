@@ -10,8 +10,20 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/preloader.css">
 </head>
 <body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+    </div>
+    <div class="content">
     <header class="header">
         <h1 class="header__title">Поликлиника "Забота о здоровье"</h1>
         <img class="header__logo" src="images/logo.final.png" alt="Логотип" width="100" height="100">
@@ -59,22 +71,15 @@
         </section>
         <section class="certificates" id="certificates">
             <h2 class="certificates__title">Сертификаты нашей клиники</h2>
-            <ul class="certificates__list">
-                <li class="certificates__item">
-                    <img class="certificate__image" src="images/liic.png" alt="Лицензия на медицинскую деятельность">
-                    <p>Лицензия на медицинскую деятельность</p>
-                </li>
-                <li class="certificates__item">
-                    <img class="certificate__image" src="images/sert.png" alt="Сертификат по лабораторной диагностике">
-                    <p>Сертификат по лабораторной диагностике</p>
-                </li>
-            </ul>
+            <ul class="certificates__list images__list"></ul>
         </section>
     </main>
+
     <footer class="footer">
         <p class="footer__text">&copy; 2024 Наша Клиника. Все права защищены.</p>
     </footer>
+</div>
 
-    <script src="scripts/script.js"></script> 
+    <script src="scripts/script.js"></script>
 </body>
 </html>

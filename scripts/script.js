@@ -228,3 +228,61 @@ if (navMenu) {
 
     console.log('Навигационное меню создано с помощью JavaScript!');
 }
+// Динамическая галерея сертификатов 3.6
+document.addEventListener("DOMContentLoaded", () => {
+    const gallerySection = document.querySelector(".certificates");
+    if (!gallerySection) return;
+
+    const galleryList = gallerySection.querySelector(".certificates__list");
+    const apiUrl = "images.json";
+
+    // Функция создания карточки
+    const createCard = ({ imageUrl, imageAlt, imageWidth }) => `
+        <li class="certificates__item images__item">
+            <img class="images__picture" 
+                src="${imageUrl[0]}" 
+                alt="${imageAlt}"
+                width="${imageWidth}">
+            <img class="images__picture" 
+                src="${imageUrl[1]}" 
+                alt="${imageAlt}"
+                width="${imageWidth}"
+                style="display: none;">
+        </li>
+    `;
+
+    // Загрузка данных
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            galleryList.innerHTML = data.map(item => createCard(item)).join("");
+            initImageToggle();
+        })
+        .catch(error => console.error("Ошибка загрузки данных:", error));
+
+    // Инициализация переключения
+    const initImageToggle = () => {
+        galleryList.querySelectorAll(".images__item").forEach(item => {
+            const images = item.querySelectorAll(".images__picture");
+            item.addEventListener("click", () => {
+                images.forEach(img => {
+                    img.style.display = img.style.display === "none" ? "block" : "none";
+                });
+            });
+        });
+    };
+});
+// Прелоадер
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.querySelector(".preloader");
+    const content = document.querySelector(".content");
+
+    if (preloader && content) {
+        setTimeout(() => {
+            preloader.style.opacity = "0";
+            preloader.style.visibility = "hidden";
+            content.style.display = "block";
+            preloader.remove();
+        }, 3000);
+    }
+});

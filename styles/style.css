@@ -16,3 +16,9 @@
 @import "appointment.css"; 
 /* Подключение стилей относящихся к normalize*/ 
 @import "normalize.css"; 
+/* Подключение стилей относящихся к images.css*/ 
+@import "images.css"; 
+/* Подключение стилей относящихся к  preloader.css */ 
+@import "preloader.css";
+/* Подключение стилей относящихся к  animation.css */ 
+@import "animation.css";

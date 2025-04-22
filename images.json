@@ -1,0 +1,12 @@
+[
+    {
+        "imageUrl": ["images/liic.png", "images/sert.png"],
+        "imageAlt": "Лицензия и сертификаты",
+        "imageWidth": 300
+    },
+    {
+        "imageUrl": ["images/sert.png", "images/liic.png"],
+        "imageAlt": "Сертификаты качества",
+        "imageWidth": 300
+    }
+]
