@@ -256,12 +256,12 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             galleryList.innerHTML = data.map(item => createCard(item)).join("");
-            initImageToggle();
+           // initImageToggle();
         })
         .catch(error => console.error("Ошибка загрузки данных:", error));
 
     // Инициализация переключения
-    const initImageToggle = () => {
+    /*const initImageToggle = () => {
         galleryList.querySelectorAll(".images__item").forEach(item => {
             const images = item.querySelectorAll(".images__picture");
             item.addEventListener("click", () => {
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             });
         });
-    };
+    };*/
 });
 // Прелоадер
 document.addEventListener("DOMContentLoaded", () => {
